@@ -24,7 +24,7 @@ public class CommandViewEntries {
             Block block = ForgeRegistries.BLOCKS.getValue(resourceLocation);
             if (block != null) {
                 String blockName = block.getName().getString();
-                source.sendSuccess(new TextComponent(ChatFormatting.GREEN + blockName), true);
+                source.sendSuccess(new TextComponent(ChatFormatting.AQUA + blockName), true);
             }
         }
         return 0;
