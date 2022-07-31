@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -92,7 +93,7 @@ public class JsonHandler {
         for (BlockListEntry entry : JsonHandler.blockListConfig.getBlockListConfig()) {
             ResourceLocation resourceLocation = new ResourceLocation(entry.getBlock());
             Block block = ForgeRegistries.BLOCKS.getValue(resourceLocation);
-            if (block == null) {
+            if (block == null || block instanceof FallingBlock) {
                 removeEntry(entry.getBlock());
             }
         }
