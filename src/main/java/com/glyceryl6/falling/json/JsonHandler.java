@@ -5,7 +5,10 @@ import com.glyceryl6.falling.json.objects.BlockListConfig;
 import com.glyceryl6.falling.json.objects.BlockListEntry;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -83,6 +86,16 @@ public class JsonHandler {
         Path compostConfigPath = Paths.get(configPath.toAbsolutePath().toString(), FallingBlocks.MOD_ID);
         try {Files.createDirectory(compostConfigPath);
         } catch (IOException ignored) {}
+    }
+
+    public static void removeNullBlock() {
+        for (BlockListEntry entry : JsonHandler.blockListConfig.getBlockListConfig()) {
+            ResourceLocation resourceLocation = new ResourceLocation(entry.getBlock());
+            Block block = ForgeRegistries.BLOCKS.getValue(resourceLocation);
+            if (block == null) {
+                removeEntry(entry.getBlock());
+            }
+        }
     }
 
 }

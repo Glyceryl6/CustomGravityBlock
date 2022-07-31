@@ -14,6 +14,7 @@ public class FallingBlocks {
 
     public FallingBlocks() {
         JsonHandler.setup();
+        JsonHandler.removeNullBlock();
         MinecraftForge.EVENT_BUS.register(new FallingBlockTick());
         MinecraftForge.EVENT_BUS.addListener(this::registerCommands);
     }
