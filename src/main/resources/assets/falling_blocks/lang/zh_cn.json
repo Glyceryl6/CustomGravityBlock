@@ -1,0 +1,10 @@
+{
+  "falling_blocks.info.add.success": "§a已将 §r§e%s §r§a设置为重力方块",
+  "falling_blocks.info.add.fail": "§c该物品已存在于重力方块列表中",
+  "falling_blocks.info.add.air": "§c有重力的空气方块...感觉不太好吧",
+  "falling_blocks.info.add.falling": "§c该方块原本就是重力方块，无法进行修改",
+  "falling_blocks.info.remove.success": "§a已将 §r§e%s §r§a从重力方块列表中移除",
+  "falling_blocks.info.remove.fail": "§c该物品不存在于重力方块列表中",
+  "falling_blocks.info.reload.success": "§a配置文件已加载",
+  "falling_blocks.info.reload.fail": "§c配置文件加载失败"
+}

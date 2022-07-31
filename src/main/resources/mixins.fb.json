@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.glyceryl6.falling.mixin",
+  "refmap": "mixins.ep.refmap.json",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "MixinBlockBehaviour",
+    "MixinServerLevel"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

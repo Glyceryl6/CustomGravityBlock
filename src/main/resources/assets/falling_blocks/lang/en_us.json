@@ -1,0 +1,10 @@
+{
+  "falling_blocks.info.add.success": "§e%s §r§ahas been set as gravity block",
+  "falling_blocks.info.add.fail": "§cThis item is already exist gravity block list",
+  "falling_blocks.info.add.air": "§cTried to set air is gravity block... This is bad",
+  "falling_blocks.info.add.falling": "§cThis block is vanilla falling block and you cannot modify it",
+  "falling_blocks.info.remove.success": "§e%s §r§ahas been remove from gravity block list",
+  "falling_blocks.info.remove.fail": "§cThis block is not found in gravity block list",
+  "falling_blocks.info.reload.success": "§aConfig reloaded",
+  "falling_blocks.info.reload.fail": "§cConfig failed to reload"
+}
