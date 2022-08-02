@@ -1,2 +1,2 @@
-# FallingBlocks-1.18.x
+# CustomGravityBlock
 This mod can set a block as falling block.
