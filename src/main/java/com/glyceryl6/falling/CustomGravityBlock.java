@@ -7,12 +7,12 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(FallingBlocks.MOD_ID)
-public class FallingBlocks {
+@Mod(CustomGravityBlock.MOD_ID)
+public class CustomGravityBlock {
 
     public static final String MOD_ID = "falling_blocks";
 
-    public FallingBlocks() {
+    public CustomGravityBlock() {
         JsonHandler.setup();
         JsonHandler.removeNullBlock();
         MinecraftForge.EVENT_BUS.register(new FallingBlockTick());

@@ -22,7 +22,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 version = '1.0'
 group = 'com.glyceryl6.falling'
-archivesBaseName = 'FallingBlocks'
+archivesBaseName = 'CustomGravityBlock'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

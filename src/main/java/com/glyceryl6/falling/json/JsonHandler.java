@@ -1,6 +1,6 @@
 package com.glyceryl6.falling.json;
 
-import com.glyceryl6.falling.FallingBlocks;
+import com.glyceryl6.falling.CustomGravityBlock;
 import com.glyceryl6.falling.json.objects.BlockListConfig;
 import com.glyceryl6.falling.json.objects.BlockListEntry;
 import com.google.gson.Gson;
@@ -84,7 +84,7 @@ public class JsonHandler {
 
     private static void createDirectory() {
         Path configPath = FMLPaths.CONFIGDIR.get();
-        Path compostConfigPath = Paths.get(configPath.toAbsolutePath().toString(), FallingBlocks.MOD_ID);
+        Path compostConfigPath = Paths.get(configPath.toAbsolutePath().toString(), CustomGravityBlock.MOD_ID);
         try {Files.createDirectory(compostConfigPath);
         } catch (IOException ignored) {}
     }
