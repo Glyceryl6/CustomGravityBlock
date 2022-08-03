@@ -13,6 +13,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,6 +37,7 @@ public class FallingBlockTick {
         }
     }
 
+    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public void fallingBlockParticle(TickEvent.WorldTickEvent event) {
         Minecraft mc = Minecraft.getInstance();
